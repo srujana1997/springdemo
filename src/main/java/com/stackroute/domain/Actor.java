@@ -5,7 +5,7 @@ public class Actor {
     String gender;
     int age;
 
-
+//setter injection
     public void setName(String name) {
         this.name = name;
     }
