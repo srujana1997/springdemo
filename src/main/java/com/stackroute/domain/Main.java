@@ -13,13 +13,14 @@ import org.springframework.core.io.ClassPathResource;
 
 public class Main {
     public static void main(String args[]){
-
+       
+        //intializing applicationcontext object with classpath file
         ApplicationContext context=new ClassPathXmlApplicationContext("bean.xml");
         Movie movie=context.getBean("movie", Movie.class);
         movie.movieDisplay();
 
         BeanFactory beanfactory=new XmlBeanFactory(new ClassPathResource("bean.xml"));
-        //  Movie movie1=(Movie) beanfactory.getBean("movie");
+                  //getBean() returns instance
         Movie movie1=beanfactory.getBean("movie", Movie.class);
         movie1.movieDisplay();
 
