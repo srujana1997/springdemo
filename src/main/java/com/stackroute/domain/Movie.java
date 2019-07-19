@@ -6,7 +6,7 @@ public class Movie {
     public Movie(Actor actor) {
         this.actor = actor;
     }
-
+//setter injection for object
     public void setActor(Actor actor) {
         this.actor = actor;
     }
