@@ -10,7 +10,7 @@ public class Actor {
         this.gender=gender;
         this.age=age;
     }
-
+//setter injection
     public void setName(String name) {
         this.name = name;
     }
