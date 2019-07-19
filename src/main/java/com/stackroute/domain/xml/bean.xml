@@ -3,11 +3,13 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
       http://www.springframework.org/schema/beans/spring-beans.xsd">
+       //Actor class bean
     <bean id="actor" class="com.stackroute.domain.Actor">
         <property name="name" value="ramcharan"/>
         <property name="gender" value="male"/>
         <property name="age" value="28"/>
     </bean>
+       //Movie class bean
     <bean id="movie" class="com.stackroute.domain.Movie">
         <property name="actor" ref="actor">
         </property>
